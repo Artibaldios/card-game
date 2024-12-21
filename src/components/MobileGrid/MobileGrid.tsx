@@ -119,10 +119,28 @@ const MobileGrid: React.FC = () => {
         if (!inspectMode) return;
         setIsTouching(true);
         const touch = event.touches[0]; // Get the first touch point
-        updateHighlight(touch.clientX, touch.clientY, event.currentTarget);
+        updateHighlightInspect(touch.clientX, touch.clientY, event.currentTarget);
     };
+    const arrestTouchStart = (event: React.TouchEvent) => {
+        if (!arrestMode) return;
+        setIsTouching(true);
+        const touch = event.touches[0]; // Get the first touch point
+        updateHighlightArrest(touch.clientX, touch.clientY, event.currentTarget);
+    };
+    const updateHighlightArrest = (clientX: number, clientY: number, gridElement: EventTarget) => {
+        const rect = (gridElement as HTMLElement).getBoundingClientRect();
+        const x = clientX - rect.left;
+        const y = clientY - rect.top;
+        let columnIndex = Math.floor((x / (rect.width / 4)));
+        let rowIndex = Math.floor((y / (rect.height / 4)));
 
-    const updateHighlight = (clientX: number, clientY: number, gridElement: EventTarget) => {
+        columnIndex = Math.max(0, Math.min(columnIndex, 3));
+        rowIndex = Math.max(0, Math.min(rowIndex, 3));
+        const newCards = cards.map(card => ({ ...card, highlighted: false }));
+        newCards[rowIndex * 4 + columnIndex].highlighted = true;
+        setCards(newCards);
+    };
+    const updateHighlightInspect = (clientX: number, clientY: number, gridElement: EventTarget) => {
         const rect = (gridElement as HTMLElement).getBoundingClientRect();
         const x = clientX - rect.left;
         const y = clientY - rect.top;
@@ -205,6 +223,11 @@ const MobileGrid: React.FC = () => {
         setInspectMode(false);
     }
 
+    const handleTouch = (event: React.TouchEvent) => {
+        inspectTouchStart(event);
+        arrestTouchStart(event);
+    };
+
     // Function to change the color of a random card
     const setRandomCardKiller = () => {
         const randomIndex = Math.floor(Math.random() * initialCards.length);
@@ -280,7 +303,7 @@ const MobileGrid: React.FC = () => {
                     </div>
                     <div
                         className={` grid content ${isVisible ? 'visible' : 'hidden'}`}
-                        onTouchStart={inspectTouchStart}
+                        onTouchStart={handleTouch}
                     >
                         {cards.map(card => (
                             <Card key={card.id} card={card} handleCardClick={handleCardClick} inspectTouchStart={inspectTouchStart} handleImageLoad={(e) => handleImageLoad(e)}></Card>
