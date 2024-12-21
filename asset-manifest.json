@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/card-game/static/css/main.bc3d7698.css",
+    "main.js": "/card-game/static/js/main.9aabb588.js",
+    "static/js/453.52217efb.chunk.js": "/card-game/static/js/453.52217efb.chunk.js",
+    "static/media/1.jpg": "/card-game/static/media/1.67f543c2818bc8d8388e.jpg",
+    "static/media/5.jpg": "/card-game/static/media/5.ea23ed91df6e946e685d.jpg",
+    "static/media/11.jpg": "/card-game/static/media/11.62b2d63b7c43b8404537.jpg",
+    "static/media/7.jpg": "/card-game/static/media/7.b32f8bce75be5d2da629.jpg",
+    "static/media/10.jpg": "/card-game/static/media/10.2ee876c3449f1e486f73.jpg",
+    "static/media/9.jpg": "/card-game/static/media/9.2d28b40f43971b4dd161.jpg",
+    "static/media/6.jpg": "/card-game/static/media/6.3a0cde6825d1c6dc46a7.jpg",
+    "static/media/16.jpg": "/card-game/static/media/16.6cab43f9f33cbcfb6860.jpg",
+    "static/media/12.jpg": "/card-game/static/media/12.a16714f940a7056d320a.jpg",
+    "static/media/2.jpg": "/card-game/static/media/2.e21c12550c0e57106be3.jpg",
+    "static/media/3.jpg": "/card-game/static/media/3.b3259df1c2dae4cd46fb.jpg",
+    "static/media/4.jpg": "/card-game/static/media/4.d1ac2c09a9b9944a3a23.jpg",
+    "static/media/15.jpg": "/card-game/static/media/15.5c2ecbdcd02785d235c9.jpg",
+    "static/media/14.jpg": "/card-game/static/media/14.2534eeadfc4ed7c45a46.jpg",
+    "static/media/8.jpg": "/card-game/static/media/8.a613ac2b1414d5409272.jpg",
+    "static/media/13.jpg": "/card-game/static/media/13.4c0ce9fdb123b7811085.jpg",
+    "index.html": "/card-game/index.html",
+    "main.bc3d7698.css.map": "/card-game/static/css/main.bc3d7698.css.map",
+    "main.9aabb588.js.map": "/card-game/static/js/main.9aabb588.js.map",
+    "453.52217efb.chunk.js.map": "/card-game/static/js/453.52217efb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc3d7698.css",
+    "static/js/main.9aabb588.js"
+  ]
+}
