@@ -2,7 +2,7 @@
 .main-grid-elements{
   max-width: 1280px;
   margin: auto;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
 }
