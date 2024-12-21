@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/card-game/static/css/main.bc3d7698.css",
-    "main.js": "/card-game/static/js/main.b75ca2dc.js",
+    "main.css": "/card-game/static/css/main.90ed8533.css",
+    "main.js": "/card-game/static/js/main.8efedbd5.js",
     "static/js/453.f719f08f.chunk.js": "/card-game/static/js/453.f719f08f.chunk.js",
     "static/media/1.jpg": "/card-game/static/media/1.67f543c2818bc8d8388e.jpg",
     "static/media/5.jpg": "/card-game/static/media/5.ea23ed91df6e946e685d.jpg",
@@ -20,12 +20,12 @@
     "static/media/8.jpg": "/card-game/static/media/8.a613ac2b1414d5409272.jpg",
     "static/media/13.jpg": "/card-game/static/media/13.4c0ce9fdb123b7811085.jpg",
     "index.html": "/card-game/index.html",
-    "main.bc3d7698.css.map": "/card-game/static/css/main.bc3d7698.css.map",
-    "main.b75ca2dc.js.map": "/card-game/static/js/main.b75ca2dc.js.map",
+    "main.90ed8533.css.map": "/card-game/static/css/main.90ed8533.css.map",
+    "main.8efedbd5.js.map": "/card-game/static/js/main.8efedbd5.js.map",
     "453.f719f08f.chunk.js.map": "/card-game/static/js/453.f719f08f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc3d7698.css",
-    "static/js/main.b75ca2dc.js"
+    "static/css/main.90ed8533.css",
+    "static/js/main.8efedbd5.js"
   ]
 }
