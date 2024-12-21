@@ -162,13 +162,13 @@ const MobileGrid: React.FC = () => {
         setCards(newCards);
     };
 
-    // Function to handle card click
-    const handleCardClick = () => {
-        if (!isTouching) {
-            handleArrestClick();
-            handleHighlightClick();
-        }
-    };
+    // // Function to handle card click
+    // const handleCardClick = () => {
+    //     if (!isTouching) {
+    //         handleArrestClick();
+    //         handleHighlightClick();
+    //     }
+    // };
 
     const handleCardTouch = () => {
         if (isTouching && ((arrestMode && inspectMode === false) || (arrestMode === false && inspectMode))) {
@@ -306,7 +306,7 @@ const MobileGrid: React.FC = () => {
                         onTouchStart={handleTouch}
                     >
                         {cards.map(card => (
-                            <Card key={card.id} card={card} handleCardClick={handleCardClick} inspectTouchStart={inspectTouchStart} handleImageLoad={(e) => handleImageLoad(e)}></Card>
+                            <Card key={card.id} card={card}  handleImageLoad={(e) => handleImageLoad(e)}></Card>
                         ))}
                     </div>
                     <button

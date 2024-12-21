@@ -4,8 +4,8 @@ import './Card.css';
 
 interface CardProps {
   card: iCard;
-  handleCardClick: (event: React.MouseEvent) => void;
-  inspectTouchStart: (event: React.TouchEvent) => void;
+  handleCardClick?: (event: React.MouseEvent) => void;
+  inspectTouchStart?: (event: React.TouchEvent) => void;
   handleImageLoad: (event: React.SyntheticEvent<HTMLImageElement>) => void;
 }
 
