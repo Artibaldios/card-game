@@ -273,13 +273,10 @@ const Grid: React.FC = () => {
   };
 
   const handleHighlightingOFF = () => {
-    setCards(prevCards => {
-      const updatedCards = prevCards.map(card => {
-        card.highlighted = false;
-        return card
-      });
-      return updatedCards
-    });
+    setCards(prevCards => prevCards.map(card => ({
+        ...card,
+        highlighted: false
+    })));
   };
 
   const handleNextTurn = () => {
